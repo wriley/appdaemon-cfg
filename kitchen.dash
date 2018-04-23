@@ -17,10 +17,10 @@ temperature:
   title: Temperature
   widget_style: "font-size: 200%"
 
-temperature_apparent:
+humidity:
   widget_type: sensor
-  entity: sensor.dark_sky_apparent_temperature
-  title: Feels Like
+  entity: sensor.dark_sky_humidity
+  title: Humidity
   widget_style: "font-size: 200%"
 
 current:
@@ -37,6 +37,6 @@ week:
 
 layout:
   - weather_frame(6x5), temperature(2x1)
-  - temperature_apparent(2x1)
+  - humidity(2x1)
   - current(2x1)
   - week(2x2)
