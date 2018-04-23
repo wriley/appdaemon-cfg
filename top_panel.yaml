@@ -1,0 +1,28 @@
+weather:
+    widget_type: weather
+    units: "&deg;F"
+
+porch_motion:
+    widget_type: binary_sensor
+    title: Porch
+    entity: binary_sensor.ring_front_door_motion
+
+garage_big:
+    widget_type: cover
+    title: Garage (Big)
+    entity: cover.big_garage_door
+    icon_on: fa-car
+    icon_off: fa-car
+    icon_style_active: $style_active_warn
+
+garage_small:
+    widget_type: cover
+    title: Garage (Small)
+    entity: cover.small_garage_door
+    icon_on: fa-car
+    icon_off: fa-car
+    icon_style_active: $style_active_warn
+
+layout:
+  - clock.clock(2x1), weather(2x2)
+  - porch_motion, garage_big, garage_small

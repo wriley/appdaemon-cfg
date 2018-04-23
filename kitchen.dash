@@ -1,0 +1,42 @@
+title: Kitchen Panel
+widget_dimensions: [150, 135]
+widget_margins: [4, 4]
+columns: 8
+
+weather_frame:
+  widget_type: iframe
+  frame_style: ""
+  title: Radar
+  refresh: 300
+  img_list:
+    - https://icons.wxug.com/data/weather-maps/radar/united-states/jefferson-city-missouri-region-current-radar-animation.gif
+
+temperature:
+  widget_type: sensor
+  entity: sensor.dark_sky_temperature
+  title: Temperature
+  widget_style: "font-size: 200%"
+
+temperature_apparent:
+  widget_type: sensor
+  entity: sensor.dark_sky_apparent_temperature
+  title: Feels Like
+  widget_style: "font-size: 200%"
+
+current:
+  widget_type: sensor
+  entity: sensor.dark_sky_summary
+  title: Current
+  widget_style: "font-size: 200%"
+
+week:
+  widget_type: sensor
+  entity: sensor.dark_sky_daily_summary
+  title: The Week
+  widget_style: "font-size: 200%"
+
+layout:
+  - weather_frame(6x5), temperature(2x1)
+  - temperature_apparent(2x1)
+  - current(2x1)
+  - week(2x2)

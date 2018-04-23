@@ -1,0 +1,9 @@
+lamp:
+  widget_type: switch
+  title: Living Room Lamp
+  entity: switch.living_room_lamp
+  icon_on: mdi-lamp
+  icon_off: mdi-lamp
+
+layout:
+  - lamp

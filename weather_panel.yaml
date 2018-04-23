@@ -1,0 +1,10 @@
+weather_frame:
+  widget_type: iframe
+  frame_style: ""
+  title: Radar
+  refresh: 300
+  img_list:
+    - https://icons.wxug.com/data/weather-maps/radar/united-states/jefferson-city-missouri-region-current-radar-animation.gif
+
+layout:
+  - weather_frame(6x5), sensor.dark_sky_temperature
